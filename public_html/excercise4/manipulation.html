@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <link href="myStyle.css" 
+        rel="stylesheet" 
+        type="text/css"/> 
+    </head>
+    <script>
+        function update()
+        {
+            var redValBorder = document.getElementById("redValBorder").value;
+            var greenValBorder = document.getElementById("greenValBorder").value;
+            var blueValBorder = document.getElementById("blueValBorder").value;
+            var redValBack = document.getElementById("redValBack").value;
+            var greenValBack = document.getElementById("greenValBack").value;
+            var blueValBack = document.getElementById("blueValBack").value;
+            var width = document.getElementById("width").value;
+            document.getElementById("dummy").style.borderColor = `rgb(${redValBorder}, ${greenValBorder}, ${blueValBorder})`;
+            document.getElementById("dummy").style.borderWidth = `${width}px`;
+            document.getElementById("dummy").style.backgroundColor = `rgb(${redValBack}, ${greenValBack}, ${blueValBack})`;
+        }
+    </script>
+    <body>
+        
+        <p id ="dummy">Dummy Text Dummy Text Dummy Text</p>
+        <form action="/manipulation.html">
+            Border Manipulation:<br><br>
+            <label for="redValBorder">Red value (0-255):</label>
+            <input type="number" id ="redValBorder" value= "0"><br><br>
+            <label for="greenValBorder">Green value (0-255):</label>
+            <input type="number" id ="greenValBorder" value= "0"><br><br>
+            <label for="blueValBorder">Blue value (0-255):</label>
+            <input type="number" id ="blueValBorder" value= "0"><br><br>
+            <label for="width">Width:</label>
+            <input type="number" id ="width" value= "1"><br><br>
+            Background Manipulation:<br><br>
+            <label for="redValBack">Red value (0-255):</label>
+            <input type="number" id ="redValBack" value= "255"><br><br>
+            <label for="greenValBack">Green value (0-255):</label>
+            <input type="number" id ="greenValBack" value= "255"><br><br>
+            <label for="blueValBack">Blue value (0-255):</label>
+            <input type="number" id ="blueValBack" value= "255"><br><br>
+            <button onclick="update()">Update</button>
+        </form>
+        
+    </body>
+    
+</html>
