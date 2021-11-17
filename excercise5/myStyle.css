@@ -1,0 +1,14 @@
+p {
+    font-size: 25pt;
+    color: black;
+}
+
+p.title {
+    font-size: 45pt;
+    text-align: center;
+}
+
+body {
+    background-color: orange;
+    background-size: 100%;
+}
