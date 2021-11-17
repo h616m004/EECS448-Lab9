@@ -23,12 +23,12 @@ p.bio {
     top: 80px;
     background-color: gold;
     border: 5px solid purple;
-    
+
 }
 
 body {
     background-color: gold;
-    background-image: url(../images/court.jpg); 
+    background-image: url(../images/court.jpg);
     background-size: 100%;
 }
 

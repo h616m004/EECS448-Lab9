@@ -1,4 +1,16 @@
 p{
+    font-size: 20;
+}
+
+p.dummy{
     font-size: 40;
     border: 1px solid rgb(0, 0, 0);
+}
+
+label{
+    font-size: 20;
+}
+
+input{
+    font-size: 20;
 }
