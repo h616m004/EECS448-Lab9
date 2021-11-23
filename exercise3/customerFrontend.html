@@ -1,0 +1,40 @@
+<html>
+        <head>
+                <link href="style.css" 
+                rel="stylesheet" 
+                type="text/css"/> 
+                <p class="title">Jersey Web Store</p>
+        </head>
+        <body>
+                <form action="customerBackend.php" method="post">
+                        <label>
+                                Username: <input type="text" name="username">
+                        </label><br>
+                        <label>
+                                Password: <input type="password" name="password">
+                        </label><br>
+                        <p>Items:</p>
+                        <label>
+                                Brandon Crawford SF Giants Jersey ($35) Quantity: <input type="number" name="bcraw">
+                        </label><br>
+                        <label>
+                                Jalen Ramsey LA Rams Jersey ($50) Quantity: <input type="number" name="ramsey">
+                        </label><br>
+                        <label>
+                                Kobe Bryant LA Lakers Jersey ($24.08) Quantity: <input type="number" name="kobe">
+                        </label><br>
+                        <p>Shipping options: </p>
+                        <label>
+                                <input type="radio" name="option" value="Free 7 day"> Free 7 day
+                        </label><br>
+                        <label>
+                                <input type="radio" name="option" value="$50.00 over night"> $50.00 over night
+                        </label><br>
+                        <label>
+                                <input type="radio" name="option" value="$5.00 three day"> $5.00 three day
+                        </label><br><br>
+                        <input type="reset">
+                        <input type="submit">
+                </form>
+        </body>
+</html>

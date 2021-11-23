@@ -1,0 +1,11 @@
+p {
+    color: black;
+    font-family: Helvetica;
+    font-size: 15pt;
+}
+
+p.title {
+    color: black;
+    font-family: Helvetica;
+    font-size: 20pt;
+}
