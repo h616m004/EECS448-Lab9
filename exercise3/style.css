@@ -1,11 +1,19 @@
+p.title {
+    color: black;
+    font-family: Helvetica;
+    font-size: 20pt;
+}
+
 p {
     color: black;
     font-family: Helvetica;
     font-size: 15pt;
 }
 
-p.title {
-    color: black;
-    font-family: Helvetica;
-    font-size: 20pt;
+table, th, td {
+    border: 1px solid black;
+}
+
+body.green {
+    background-color: lightgreen;
 }

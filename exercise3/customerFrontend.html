@@ -4,25 +4,25 @@
                 <link href="style.css" 
                 rel="stylesheet" 
                 type="text/css"/> 
-                <p class="title">Jersey Web Store</p>
+                <p class = "title">Jersey Web Store</p>
         </head>
-        <body>
-                <form>
+        <body class="green">
+		<form method="post">
                         <label>
-                                Username: <input type="text" id="username">
+                                Username: <input type="text" id="username" name="username">
                         </label><br>
                         <label>
-                                Password: <input type="password" id="password">
+                                Password: <input type="password" id="password" name="password">
                         </label><br>
                         <p>Items:</p>
                         <label>
-                                Brandon Crawford SF Giants Jersey ($35) Quantity: <input type="number" id="bcraw">
+                                Brandon Crawford SF Giants Jersey ($35) Quantity: <input type="number" id="bcraw" name="bcraw">
                         </label><br>
                         <label>
-                                Jalen Ramsey LA Rams Jersey ($50) Quantity: <input type="number" id="ramsey">
+                                Jalen Ramsey LA Rams Jersey ($50) Quantity: <input type="number" id="ramsey" name="ramsey">
                         </label><br>
                         <label>
-                                Kobe Bryant LA Lakers Jersey ($24.08) Quantity: <input type="number" id="kobe">
+                                Kobe Bryant LA Lakers Jersey ($24) Quantity: <input type="number" id="kobe" name="kobe">
                         </label><br>
                         <p>Shipping options: </p>
                         <label>
@@ -35,7 +35,7 @@
                                 <input type="radio" name="option" id="option3" value="$5.00 three day"> $5.00 three day
                         </label><br><br>
                         <input type="reset">
-                        <button onclick="checker()">Submit</button>
+                        <button id="submit">Submit</button>
                 </form>
         </body>
 </html>
