@@ -1,12 +1,13 @@
 <html>
         <head>
+                <script src="formChecker.js.js"></script>
                 <link href="style.css" 
                 rel="stylesheet" 
                 type="text/css"/> 
                 <p class="title">Jersey Web Store</p>
         </head>
         <body>
-                <form action="customerBackend.php" method="post">
+                <form onsubmit="checker()" method="post">
                         <label>
                                 Username: <input type="text" name="username">
                         </label><br>
