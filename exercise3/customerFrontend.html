@@ -1,41 +1,41 @@
 <html>
         <head>
-                <script src="formChecker.js.js"></script>
+                <script src="formChecker.js"></script>
                 <link href="style.css" 
                 rel="stylesheet" 
                 type="text/css"/> 
                 <p class="title">Jersey Web Store</p>
         </head>
         <body>
-                <form onsubmit="checker()" method="post">
+                <form>
                         <label>
-                                Username: <input type="text" name="username">
+                                Username: <input type="text" id="username">
                         </label><br>
                         <label>
-                                Password: <input type="password" name="password">
+                                Password: <input type="password" id="password">
                         </label><br>
                         <p>Items:</p>
                         <label>
-                                Brandon Crawford SF Giants Jersey ($35) Quantity: <input type="number" name="bcraw">
+                                Brandon Crawford SF Giants Jersey ($35) Quantity: <input type="number" id="bcraw">
                         </label><br>
                         <label>
-                                Jalen Ramsey LA Rams Jersey ($50) Quantity: <input type="number" name="ramsey">
+                                Jalen Ramsey LA Rams Jersey ($50) Quantity: <input type="number" id="ramsey">
                         </label><br>
                         <label>
-                                Kobe Bryant LA Lakers Jersey ($24.08) Quantity: <input type="number" name="kobe">
+                                Kobe Bryant LA Lakers Jersey ($24.08) Quantity: <input type="number" id="kobe">
                         </label><br>
                         <p>Shipping options: </p>
                         <label>
-                                <input type="radio" name="option" value="Free 7 day"> Free 7 day
+                                <input type="radio" name="option" id="option1" value="Free 7 day"> Free 7 day
                         </label><br>
                         <label>
-                                <input type="radio" name="option" value="$50.00 over night"> $50.00 over night
+                                <input type="radio" name="option" id="option2" value="$50.00 over night"> $50.00 over night
                         </label><br>
                         <label>
-                                <input type="radio" name="option" value="$5.00 three day"> $5.00 three day
+                                <input type="radio" name="option" id="option3" value="$5.00 three day"> $5.00 three day
                         </label><br><br>
                         <input type="reset">
-                        <input type="submit">
+                        <button onclick="checker()">Submit</button>
                 </form>
         </body>
 </html>
